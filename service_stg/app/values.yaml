@@ -2,20 +2,35 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 1
+replicaCount: 3
 
 image:
   # Link to your container registry. You will launch it in Yandex Cloud.
-  repository: cr.yandex/...
+  repository: cr.yandex/crpn754eb9j71qae1kou/stg_service
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "your-tag"
+  tag: "v2025-06-04-r1"
 
 containerPort: 5000
 
 config:
-  EXAMPLE_ENV1: "value"
-  EXAMPLE_ANOTHER_ENV2: "value"
+  KAFKA_HOST: "rc1a-30tlnq05v2obtirc.mdb.yandexcloud.net"
+  KAFKA_PORT: "9091"
+  KAFKA_CONSUMER_USERNAME: "producer_consumer"
+  KAFKA_CONSUMER_PASSWORD: "TKvh7CL2BtFpjh7"
+  KAFKA_CONSUMER_GROUP: "наименование_консьюмерской_группы"
+  KAFKA_SOURCE_TOPIC: "order-service_orders"
+  KAFKA_STG_SERVICE_ORDERS_TOPIC: "stg-service-orders"
+
+  PG_WAREHOUSE_HOST: "rc1b-tnr6855goiph117l.mdb.yandexcloud.net"
+  PG_WAREHOUSE_PORT: 6432
+  PG_WAREHOUSE_DBNAME: "sprint9dwh"
+  PG_WAREHOUSE_USER: "rodin_as"
+  PG_WAREHOUSE_PASSWORD: "TKvh7CL2BtFpjh7"
+
+  REDIS_HOST: "c-c9qf81alvka3dbg698bs.rw.mdb.yandexcloud.net"
+  REDIS_PORT: 6380
+  REDIS_PASSWORD: "TKvh7CL2BtFpjh7"
 
 imagePullSecrets: []
 nameOverride: ""
