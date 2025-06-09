@@ -28,10 +28,6 @@ config:
   PG_WAREHOUSE_USER: "rodin_as"
   PG_WAREHOUSE_PASSWORD: "TKvh7CL2BtFpjh7"
 
-  REDIS_HOST: "c-c9qf81alvka3dbg698bs.rw.mdb.yandexcloud.net"
-  REDIS_PORT: "6380"
-  REDIS_PASSWORD: "TKvh7CL2BtFpjh7"
-
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
