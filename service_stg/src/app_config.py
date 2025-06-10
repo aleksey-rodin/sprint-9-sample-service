@@ -31,6 +31,8 @@ class AppConfig:
         self.pg_warehouse_user = str(os.getenv('PG_WAREHOUSE_USER') or "")
         self.pg_warehouse_password = str(os.getenv('PG_WAREHOUSE_PASSWORD') or "")
 
+        self.batch_size = int(os.getenv('batch_size') or 100)
+
     def kafka_producer(self):
         return KafkaProducer(
             self.kafka_host,
