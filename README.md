@@ -29,3 +29,11 @@ helm upgrade --install --atomic test app
 Назначте этой группе роль `container-registry.images.puller`:
 
 <img src="img/regisry_role.png" alt="Contact Point" width="512"/>
+
+
+Ссылки на реджистри:
+cr.yandex/crpn754eb9j71qae1kou/stg_service:v2025-06-09-r2
+cr.yandex/crpn754eb9j71qae1kou/dds_service:v2025-06-10-r1
+cr.yandex/crpn754eb9j71qae1kou/cdm_service:v2025-06-10-r1
+
+![image](https://github.com/user-attachments/assets/0d46b2c8-7349-4455-8039-66813458beb2)
