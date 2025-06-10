@@ -2,7 +2,7 @@ from lib.pg import PgConnect
 from cdm_loader.repository.cdm_dto import ProductCountersDTO
 
 
-class CMDRepository:
+class CDMRepository:
     def __init__(self, db: PgConnect) -> None:
         self._db = db
 
