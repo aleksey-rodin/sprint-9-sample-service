@@ -1,5 +1,5 @@
 from lib.pg import PgConnect
-from cdm_loader.repository.cdm_model import ProductCountersDTO
+from cdm_loader.repository.cdm_dto import ProductCountersDTO
 
 
 class CMDRepository:
