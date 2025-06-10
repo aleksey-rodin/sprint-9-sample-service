@@ -9,7 +9,7 @@ image:
   repository: cr.yandex/crpn754eb9j71qae1kou/stg_service
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v2025-06-09-r2"
+  tag: "v2025-06-10-r1"
 
 containerPort: 5000
 
@@ -19,8 +19,8 @@ config:
   KAFKA_CONSUMER_USERNAME: "producer_consumer"
   KAFKA_CONSUMER_PASSWORD: "TKvh7CL2BtFpjh7"
   KAFKA_CONSUMER_GROUP: "main-consumer-group"
-  KAFKA_SOURCE_TOPIC: "order-service_orders"
-  KAFKA_STG_SERVICE_ORDERS_TOPIC: "stg-service-orders"
+  KAFKA_SOURCE_TOPIC: "stg-service-orders"
+  KAFKA_DESTINATION_TOPIC: "dds-service-orders"
 
   PG_WAREHOUSE_HOST: "rc1b-tnr6855goiph117l.mdb.yandexcloud.net"
   PG_WAREHOUSE_PORT: "6432"
