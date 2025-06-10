@@ -4,8 +4,8 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from flask import Flask
 
 from app_config import AppConfig
-from service_dds.src.dds_loader.dds_message_processor_job import DDSMessageProcessor
-from service_dds.src.dds_loader.repository.dds_repository import DDSRepository
+from dds_loader.dds_message_processor_job import DDSMessageProcessor
+from dds_loader.repository.dds_repository import DDSRepository
 
 app = Flask(__name__)
 

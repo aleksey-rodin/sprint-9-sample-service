@@ -3,7 +3,7 @@ from psycopg.rows import class_row
 import uuid
 
 from lib.pg import PgConnect
-from service_dds.src.dds_loader.repository.dds_dto import *
+from dds_loader.repository.dds_dto import *
 
 
 class DDSRepository:

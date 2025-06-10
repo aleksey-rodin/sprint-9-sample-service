@@ -6,7 +6,7 @@ from uuid import uuid4
 
 from lib.kafka_connect.kafka_connectors import KafkaConsumer, KafkaProducer
 from dds_loader.repository.dds_repository import DDSRepository
-from service_dds.src.dds_loader.repository.dds_dto import *
+from dds_loader.repository.dds_dto import *
 
 
 class DDSMessageProcessor:
